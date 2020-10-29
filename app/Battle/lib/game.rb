@@ -17,4 +17,9 @@ class Game
   def switch_turn
     @current_player = current_player == player1 ? player2 : player1
   end
+
+  def game_over?
+    return @player1.hp == 0 || @player2.hp == 0
+  end
+
 end

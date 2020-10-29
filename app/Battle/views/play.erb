@@ -10,3 +10,8 @@
 <% if @attacked %>
   <p> <%= @attacker %> attack successful! </p>
 <% end %>
+
+
+<% if @game.game_over? %>
+  <p>You lose! 0HP!</p>
+<% end %>
